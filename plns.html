@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body background="">
+<p align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcS6SVdUBWNc_gQbbHPo6N_QOzZJJwRjaOEA&s" height="75" wight="50">
+   <h1><p align="center">Plans<p/><h1/>
+    <div class="plans-container">
+        <div class="plan">
+            <h2><p style="color: brown">bronze Plan</h2>
+            <p><p style="color: brown">unlimited movies in 480p<br>or 10 movies in 720p</P>
+            <p><p style="color: brown">90+Regional+all india channels in fhd<p/>
+            <p><p style="color: brown">Upto 5GB cloud storage<p/>
+            
+            <p><p style="color: red">Price: 35/month</p>
+         <a href="https://drive.google.com/file/d/1INAUme2_T5TuwxgGiaifcqL4N-y_Xh5T/view?pli=1" ><button><h1>select</a>
+        </div>
+        <div class="plan">
+            <h2><p style="color:silver">Silver Plan</h2>
+             <p><p style="color:silver">unlimited movies in 720p<br>or 10 movies in 720p with dolby audio</P>
+            <p><p style="color:silver">150 Regional+all india channels in fhd<p/>
+            <p><p style="color:silver">Upto 15GB cloud storage<p/>
+            <p><p style="color:silver">aflix originals<p/>
+            <p><p style="color:silver">unlimited songs in lalal in 320kpbs<p/>
+            <p><p style="color:silver">unlimited darshan with thithayatra.com<p/>
+            
+            <p><p style="color: blue">Price: 65/month</p>
+            <a href="https://drive.google.com/file/d/1IUDpEsJgqCzQg6gikv5GStusXw9pc7IQ/view" ><button><h1>select</a>
+        </div>
+        <div class="plan">
+            <h2><p style="color:gold">Gold Plan</h2>
+               <p><p style="color:gold">unlimited movies in 4k dolby atmos<p/>
+            <p><p style="color:gold">990+ Regional+all india+worldwide channels in fhd<p/>
+            <p><p style="color:gold">Upto 35GB cloud storage<p/>
+            <p><p style="color:gold">aflix originals in dolby audio<p/>
+            <p><p style="color:gold">unlimited songs in lalal in 640kpbs and dolby audio<p/>
+            <p><p style="color:gold">unlimited darshan in thithayatra.com</p>
+            <p><p style="color:gold">7day free trail<p/>
+            <p><p style="color:gold">24/7 costomer support<p/>
+            <p><p style="color:gold">less signal losses<p>
+            
+            <p><p style="color:green">Price:<del>175</del> 145/month</p>
+            <a href="https://drive.google.com/file/d/1IX-Svj2msPEiBouTfQX6yYXpRDrdBFQ9/view" ><button><h1>select</a>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<style>body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+.plan {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.select-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-button:hover {
+    background-color: #0056b3;
+}
+</style><script>document.addEventListener("DOMContentLoaded", function () {
+    const selectButtons = document.querySelectorAll(".select-button");
+
+    selectButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+            // In a real implementation, you would perform actions like redirecting to payment or processing the selected plan.
+            alert("Selected: " + button.parentElement.querySelector("h2").textContent);
+        });
+    });
+});
+</script>
